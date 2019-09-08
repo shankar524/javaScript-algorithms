@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let sibilings = ['feven','yonas','eli', 'yosyas','eli']
+// let newArray = sibilings.map(sibiling =>{
+//   console.log(sibiling + 'Love each other !') 
+
+  //add elements in an Array
+
+ const  numbers = [10,20,40,50]
+//  let sum = 0;
+//  for (let i=0; i<= numbers.length; i++){
+//    sum =sum + numbers[i]
+//    console.log(sum)
+//  }
+const add = (total,num) =>{
+return total + num
+}
+ let result = numbers.reduce(add)
+console.log(result)
+
+
+const  sibiling = sibilings.filter(eachSibiling => {
+  return eachSibiling === 'eli'
+  
+})
+console.log(sibiling)
+
+
+
+// foreach
+const products = [
+  { name: 'Shampoo', price: 4.99 },
+  { name: 'Donuts', price: 7.99 },
+  { name: 'Cookies', price: 6.49 },
+  { name: 'Bath Gel', price: 13.99 }
+];
+
+function getTotalAmountForProducts() {
+  let totalPrice = 0 
+  products.forEach(product => {
+     totalPrice += product.price 
+  })
+  return totalPrice
+}
+console.log(getTotalAmountForProducts())
+
+
+//reduce
+
+const couponLocations = [
+  { room: 'Living room', amount: 5 },
+  { room: 'Kitchen', amount: 2 },
+  { room: 'Bathroom', amount: 1 },
+  { room: 'Master bedroom', amount: 7 }
+]
+ 
+const  couponCounter = (totalAmount, location) =>{
+  return totalAmount + location.amount;
+}
+ 
+console.log(couponLocations.reduce(couponCounter, 0))
+console.log(couponLocations.reduce(couponCounter,100))
+
+
+// sort
+
+const names = ['feven', 'yonas', 'helen', 'eli']
+ newArray = names.sort((a,b)=>{
+  if(a > b){
+    return 1
+  }
+  else if(a < b){
+    return -1
+  }
+
+})
+console.log(newArray)
+
+
+
+  
+
+
+
+
+
+// Display data from the object:
+//document.getElementById("demo").innerHTML = person.fullName();
+</script>
+
+</body>
+</html>

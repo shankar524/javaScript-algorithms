@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Clicker</title>
+    <meta name="description" content="">
+    <style></style>
+</head>
+<body>
+
+<script>
+  let speak = function() { return `It ain't easy being ${this.name}`}
+let frog = { name: "Kermit" }
+let pig = { name: "Miss Piggy" }
+frog.speak = speak
+pig.speak = speak
+frog.speak === pig.speak //=> true
+console.log(frog.speak() ) //=> "It ain't easy being Kermit"
+console.log(pig.speak() ) //=> "It ain't easy being Miss Piggy"
+</script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<p>"use strict" in a function will only cause errors in that function.</p>
+
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+
+<script>
+x = 3.14;    // This will not cause an error.
+myFunction();
+
+function myFunction() {
+  "use strict";
+  y = 3.14;  // This will cause an error (y is not defined).
+}
+</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>With "use strict":</h2>
+<h3>Writing to a get-only property is not allowed.</h3>
+
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+
+<script>
+const x = {
+  val: 2
+};
+
+const x1 = () => x.val += 1;
+
+const x2 = () => x.val *= 2;
+
+
+x1()
+x2()
+
+
+console.log(x.val); // 6
+</script>
+
+</body>
+</html>
