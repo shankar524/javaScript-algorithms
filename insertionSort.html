@@ -15,6 +15,11 @@
                 return inputArr;
             };
             console.log(insertionSort([5,3,1,4,6]))
+            // we always start form index 1
+            //   runs on O(n²)  run time
+            //  the key is 3 first iteration  5,3,1,4,6 -> 3,5,1,4,6
+            // second iteration  the key is 1 3,5,1,4,6 -> 1,3,5,4,6
+            // thirs iteration the key is  4 1,3,5,4,6 -> 1,3,4,5,6
         </script>
     </body>
 </html>
