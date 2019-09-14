@@ -1,0 +1,72 @@
+<html>
+    <body>
+        <script>
+            // class Pet {
+            //     constructor(name, sound) {
+            //         this.name = name;
+            //         this.sound = sound;
+            //         console.log(this)
+            //     }
+                
+            //      speak() {
+            //         return `${this.name} says ${this.sound}!`
+            //     }
+
+            //     fly(){    
+            //         return this.speak()
+            //     }
+
+            //     }
+                
+            //     class Dog extends Pet {
+            //     // inherits constructor from Pet
+            //     constructor(name, sound, breed){
+            //         super(name,sound)
+            //         this.breed = breed
+
+            //     }
+            //     speaks(){
+            //         return (
+            //           this.speak()   + 'hii'
+                    
+            //         ) 
+            //     }
+
+            //     }
+                
+            //     class Cat extends Pet {
+            //     // inherits constructor from Pet
+            //     }
+                
+            //     class Bird extends Pet  {
+            //     // inherits constructor from Pet
+            //     fly() {
+            //         return `${this.name} flies away!`
+            //     }
+            //     }
+                
+            //     let dog = new Dog("Shadow", "woof");
+            //     let cat = new Cat("Missy", "meow");
+            //     let bird = new Bird("Tiki", "squawk");
+            //     let dog1 = new Dog('max', 'woofff')
+                
+            //     console.log(dog.speaks()); // Shadow says woof!
+                // console.log(dog.fly())
+                // console.log(cat.speak()); // Missy says meow!
+                // console.log(bird.speak()); // Tiki says squawk!
+                // console.log(bird.fly()); // Tiki flies away!
+
+                function User(name, email) {
+                    this.name = name;
+                    this.email = email;
+                    this.sayHello = function() {
+                        return(`Hello everybody, my name is ${this.name} whom you've been
+                    mailing at ${this.email}!`);
+                    };
+                    }
+                
+                   let lauren = new User('lauren', 'lauren@example.com');
+                  console.log(lauren.sayHello()); 
+        </script>
+    </body>
+</html>
