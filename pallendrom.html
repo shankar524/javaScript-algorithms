@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            const palindrom = (str) => {
+                // str = str.toLowerCase()
+                let newStr =  str.split(' ').reverse().join(' ')
+                if(str === newStr){
+                    console.log( 'the string is palindrom')
+                }
+                else{
+                    console.log('the string is not palindrom')
+                }
+                
+            }
+            palindrom('ana')
+          
+        </script>
+    </body>
+</html>

@@ -17,6 +17,17 @@
 
                 // test array:
                 bubbleSort([1, 4, 2, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234, 92]) 
+
+                const arr = [3, 5, 7];
+                arr.foo = 'hello';
+
+                for (let i in arr) {
+                console.log(i); // logs "0", "1", "2", "foo"
+                }
+
+                for (let i of arr) {
+                console.log(i); // logs 3, 5, 7
+                }
         </script>
     </body>
 </html>

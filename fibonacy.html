@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <script>
+            function fib(n){
+                result = [0,1]
+                for(i=2; i<=n; i++){
+                    let x = result[i -1]
+                    let y = result[i -2]
+                    result.push(x + y)
+                }
+                return result[n]
+            }
+            console.log(fib(7))
+        </script>
+    </body>
+</html>
