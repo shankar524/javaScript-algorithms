@@ -4,7 +4,7 @@
             // Returns index of item to be seached for
             // Returns -1 if not found
             let binarySearch = (inputArr, item) => {
-                let first=0, last = inputArr.length - 1; 
+                let first = 0, last = inputArr.length - 1; 
                 while (first <= last) { 
                 let mid = Math.floor((first + last)/2); 
                 if (inputArr[mid]===item) return mid; 
@@ -15,8 +15,8 @@
                 } 
             return -1; 
             }
-            console.log(binarySearch([1,2,4,5,6],5));
-            console.log(binarySearch([1,2,4,5,6],8))
+            console.log(binarySearch([1,2,4,5,6], 5));
+            console.log(binarySearch([1,2,4,5,6], 8));
         </script>
     </body>
 </html>
