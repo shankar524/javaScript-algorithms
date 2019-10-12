@@ -1,42 +1,21 @@
 <html>
   <body>
       <script>
-           const voulesList = 'aeiouAEIOU'
-            let vCount = 0
-          const voules = (words) => {
-              for ( let i=0 ; i<= words.length; i++){
-                  if(voulesList.indexOf(words[i])!== -1){
-                     vCount += 1
-                  }
-              }
-              return vCount
+        // count number of vowels in a string
 
-          }
-          console.log(voules('The quick brown fox'))
-
-          function test_prime(n){
-
-            if (n===1)
-            {
-                return false;
-            }
-            else if(n === 2)
-            {
-                return true;
-            }else
-            {
-                for(var x = 2; x < n; x++)
-                {
-                if(n % x === 0)
-                {
-                    return false;
+        function vowels(str){
+            let count = 0
+            const checker  = ['a', 'e', 'o', 'i', 'u','A','E','O', 'I', 'U']
+            //for(let char of str.toLowerCase()){
+                for(let i = 0; i <= str.length; i++){
+                if(checker.includes(str[i])){
+                    count++
                 }
-                }
-                return true;  
-            }
             }
 
-            console.log(test_prime(1));
+            return count
+        }
+        console.log(vowels('I AM GOOD odooo  '))
 
       </script>
   </body>
