@@ -3,7 +3,10 @@
         <script>
             const palindrom = (str) => {
                 // str = str.toLowerCase()
-                let newStr =  str.split(' ').reverse().join(' ')
+                // let newStr =  str.split(' ').reverse().join(' ')
+                let strSplit = str.split('')
+                let strReverse = strSplit.reverse()
+                let newStr = strReverse.join('')
                 if(str === newStr){
                     console.log( 'the string is palindrom')
                 }
